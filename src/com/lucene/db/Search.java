@@ -82,7 +82,7 @@ public class Search {
 	    {
 	    	FileWriter fwrite=null;
 	    	try {
-	    	fwrite=new FileWriter("resultfirst.result",true);
+	    	fwrite=new FileWriter("resultforgdeval.txt",true);
 	    	fwrite.write(t.toString()+"\n");
 	    	}
 	    	catch(IOException ex)
@@ -141,7 +141,7 @@ public class Search {
 		int r=1;
 		 for (ScoreDoc sd :hits) {
 				Document d = searcher.doc(sd.doc);
-				Result rslt=new Result(query_id,d.get("docno"),r++, sd.score,"QO","Standart");
+				Result rslt=new Result(query_id,d.get("docno"),r++, sd.score,"Q0","Standart");
 				resultlist.add(rslt);
 				
 			}

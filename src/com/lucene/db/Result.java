@@ -35,7 +35,7 @@ public class Result implements Comparable<Result>{
 		String rank=String.valueOf(this.rank);
 		String score=String.valueOf(this.score);
 		
-		return qid+"\t"+this.qo+"\t"+this.documentId+"\t"+rank+"\t"+score+"\t"+this.standart;
+		return qid+" "+this.qo+" "+this.documentId+" "+rank+" "+score+" "+this.standart;
 	
 	}
 	

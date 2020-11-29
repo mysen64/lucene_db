@@ -44,7 +44,7 @@ public class Index {
 		Index index=new Index();
 		Statement stmt=null;
 		ResultSet rs=null;
-		String sql="SELECT docno,headline,text from documents WHERE LENGTH(text)<32766";
+		String sql="SELECT docno,headline,text from documents";
 		
 		try {
 			 stmt=index.Db_Connect("lucene","root","");
